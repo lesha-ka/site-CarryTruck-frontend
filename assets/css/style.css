@@ -1,0 +1,191 @@
+body {
+	margin: 0; 
+	font-family: 'Montserrat', sans-serif; /* Определяем шрифт для всей странички*/
+	font-size: 15px; /* устанавливает размер шрифта на странице*/
+	line-height: 1.6; /* устанавливает межстрочный интервал */
+	color: #000; /* устанавливает цвет текста */
+}
+*,
+*:before,
+*:after {	
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+margin: 0; /* убираем стандартные отступы для заголовков*/
+}
+
+.page { /* .page определяет класс элемента к которому будет приминены стили, в нашем случае такой класс задан элементу body */
+	overflow: hidden; /* прячем контент который выходит за пределы экрана*/
+	background: linear-gradient(112.89deg, #F5CE69 13.1%, #DC9E00 97.71%); /* устанавливаем фон для страницы, копируем правило из figma*/
+	min-height: 100vh; /* растягиваем фон на всю высоту страницы*/
+	min-width: 100vw; /* растягиваем фон на всю ширину страницы*/
+}
+
+.container {
+	width: 1180px; /* устанавливаем ширину блока содержащего контент*/
+	margin: 0 auto; /* выравниваем его по центру страницы*/
+}
+
+.header {
+	margin-top: 22px; /* margin-top означает отступ элемента сверху*/
+	display: flex; /* свойство display: flex разместит элементы внутри родительского блока рядом друг с другом*/
+	justify-content: space-between; /* разместит элементы по краям*/
+}
+.header-logo {
+	display: flex; /* свойство display: flex разместит элементы внутри родительского блока рядом друг с другом*/
+	align-items: center; /* выравниваем элементы по центру*/
+}
+.header-title {
+	font-size: 36px; /* устанавливает размер шрифта*/
+	line-height: 43px; /* устанавливает межстрочный интервал*/
+	font-weight: 900; /* устанавливает насыщенность шрифта*/
+	margin-left: 19px; /* устанавливает отступ элемента слева*/
+}
+.header-values {
+	display: flex;
+	align-items: center;
+}
+.header-value {
+	display: flex;
+	font-size: 16px;
+	line-height: 19px; 
+	font-weight: 500;
+	margin-right: 36px; /* устанавливает отступ элемента справа*/
+}
+.header-value:last-child { /* выбираем элемент с классом header-value, который является последним*/
+	margin-right: 0; /* убираем отступ справа*/
+}
+
+.header-value-bold {
+	position: relative;
+	font-weight: 600;
+}
+.header-value-bold::after {
+	position: absolute; /* позволяет сдвинуть элемент относительно родительского с position:relative*/
+	content: "";
+	width: 95%; /* устанавливает ширину элемента*/
+	height: 1px; /* устанавливает высоту элемента*/
+	background-color: #000; /* устанавливает цвет фона элемента*/
+	bottom: -10px; /* сдвигает элемент вниз*/
+}
+/* Стили для главной страницы*/
+.main-content {
+	margin-top: 73px;
+	display: flex;
+}
+
+.main-info {
+	max-width: 448px; /*устанавливаем максимальную ширину элемента*/
+}
+
+.main-title {
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 44px;
+}
+
+.main-text {
+	margin-top: 30px;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 28px;
+}
+
+.main-links {
+	align-self: flex-end; /* прижимаем элементы к низу блока*/
+	margin-left: 45px;
+}
+
+.main-link {
+	box-sizing: border-box;
+	display: inline-block;
+	margin-right: 89px;
+	width: 292px;
+	color: #ffffff;
+	text-align: center; /* выравниваем текст по середине*/
+	border-radius: 65px; /* закругляем рамки элемента*/
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 28px;
+	text-decoration: none; /* убираем стандартное выделение ссылок*/
+	background-color: #9E06FB; /* задаем цвет фона*/
+	padding: 19px; /* устанавливаем внутренние отступы, от текста до внутренней границы*/
+}
+
+.main-link:hover { /* hover определяет стили которые будут применяться при навежении курсора */
+	box-shadow: 0px 9px 35px #3706FB; /* устанавливаем тень для элемента*/
+}
+
+.main-link-red {
+	background-color: #FE2249; /* задаем цвет фона*/
+}
+
+.main-link-red:hover { /* hover определяет стили которые будут применяться при навежении курсора */
+	box-shadow: 0px 9px 35px #FE2249; /* устанавливаем тень для элемента*/
+}
+
+.main-link:last-child { /* выбираем элемент с классом header-value, который является последним*/
+	margin-right: 0; /* убираем отступ справа*/
+}
+
+.footer-img {
+	margin-top: 170px;
+}
+
+/* Стили для страницы входа */
+
+.login-title {
+	margin-top: 75px;
+	text-align: center;
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 59px;
+}
+
+.login-form {
+	margin-top: 47px;
+	text-align: center;
+	margin-right: 100px;
+}
+
+.login-item {
+	display: flex;
+	justify-content: center; /*расположит контент по ценру страницы*/
+	align-items: center;
+	margin-bottom: 28px; /* добавим отступ внизу*/
+}
+.login-label {
+	width: 100px;
+	margin-right: 14px;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+}
+.login-input {
+	height: 42px;
+	width: 370px;
+	padding: 5px; /* устанавливаем внутренние отсступы, что б текст не прилипал к границам*/
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+}
+.login-btn {
+	margin-top: 47px;
+	margin-left: 100px;
+	cursor: pointer; /* изменим курсор пользователя при наведении на элемент*/
+	border: none; /* убираем стандартные рамки для кнопки*/
+	width: 292px;
+	color: #ffffff;
+	text-align: center; 
+	border-radius: 65px; 
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 28px;
+	box-shadow: 0px 9px 35px #FE2249; 
+	background-color: #FE2249; 
+	padding: 19px; 
+}
+.login-btn:hover { 
+	box-shadow: none;
+}
