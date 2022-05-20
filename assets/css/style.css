@@ -231,6 +231,7 @@ margin: 0; /* убираем стандартные отступы для заг
 	line-height: 28px;
 	box-shadow: 0px 9px 35px #FE2249; 
 	background-color: #FE2249; 
+	transition: 0.3s ease-in-out; /* свойство транзишен задает плавной перехода при смене стиля, что при нведении тень убиралась не моментально а спустя заданный промежуток времени*/
 	padding: 19px; 
 }
 .login-btn:hover { 
@@ -258,6 +259,7 @@ margin: 0; /* убираем стандартные отступы для заг
 	line-height: 28px;
 	box-shadow: 0px 9px 35px #FE2249; 
 	background-color: #FE2249; 
+	transition: 0.3s ease-in-out;
 	padding: 19px; 
 	text-decoration: none;
 }
@@ -361,7 +363,7 @@ margin: 0; /* убираем стандартные отступы для заг
 
 .search-btn {
 	display: block;
-	margin: 42px auto 0;
+	margin: 42px auto 20px;
 	cursor: pointer; /* изменим курсор пользователя при наведении на элемент*/
 	border: none; /* убираем стандартные рамки для кнопки*/
 	width: 292px;
@@ -375,6 +377,7 @@ margin: 0; /* убираем стандартные отступы для заг
 	background-color: #FE2249; 
 	padding: 19px; 
 	text-decoration: none;
+	transition: 0.3s ease-in-out;
 }
 
 .search-btn:hover { 
@@ -500,6 +503,7 @@ margin: 0; /* убираем стандартные отступы для заг
 	line-height: 28px;
 	box-shadow: 0px 9px 35px #FE2249; 
 	background-color: #FE2249; 
+	transition: 0.3s ease-in-out;
 	padding: 19px; 
 	text-decoration: none;
 }
@@ -626,6 +630,7 @@ margin: 0; /* убираем стандартные отступы для заг
 	line-height: 28px;
 	box-shadow: 0px 9px 35px #FE2249; 
 	background-color: #FE2249; 
+	transition: 0.3s ease-in-out;
 	padding: 19px; 
 	text-decoration: none;
 }
@@ -677,6 +682,7 @@ margin: 0; /* убираем стандартные отступы для заг
 	display: block;
 	background: #3322FE;
 	box-shadow: 0px 9px 35px #3322FE;
+	transition: 0.3s ease-in-out;
 	border-radius: 65px;
 	font-weight: 600;
 	font-size: 20px;
@@ -815,6 +821,36 @@ margin: 0; /* убираем стандартные отступы для заг
 	.main-link {
 		margin-bottom: 10px;
 	}
+	.header-title {
+		font-size: 24px;
+		margin-left: 15px;
+	}
+	.header-avatar {
+		max-width: 45px;
+		margin-left: 10px;
+	}
+	.header-avatar img{
+		max-width: 100%;
+	}
+	.header-name {
+		font-size: 18px;
+	}
+	.header-values {
+		margin: 0 5px;
+	}
+	.header-value {
+		margin-right: 12px;
+	}
+	.search-checkboxs {
+		margin-left: 0;
+		width: 50%;
+		text-align: center;
+	}
+	.main-add .search-checkboxs {
+		text-align: left;
+		margin-left: 0;
+		width: 38%;
+	}
 }
 
 @media (max-width: 900px) { 
@@ -824,13 +860,6 @@ margin: 0; /* убираем стандартные отступы для заг
 	.header {
 		flex-wrap: wrap;
 	}
-	.header-avatar {
-		max-width: 45px;
-		margin-left: 10px;
-	}
-	.header-avatar img{
-		max-width: 100%;
-	}
 	.header-values {
 		margin-top: 10px;
 		order: 3;
@@ -838,6 +867,9 @@ margin: 0; /* убираем стандартные отступы для заг
 	.main-content {
 		margin-top: 40px;
 		display: block;
+	}
+	.header-subtitle {
+		font-size: 24px;
 	}
 	.main-info {
 		max-width: 100%;
@@ -856,6 +888,7 @@ margin: 0; /* убираем стандартные отступы для заг
 	}
 	.login-btn {
 		padding: 12px 14px;
+		font-size: 16px;
 	}
 	.menu {
 		margin-top: 15vh;
@@ -870,6 +903,132 @@ margin: 0; /* убираем стандартные отступы для заг
 	.footer-img {
 		margin-top: 120px;
 	}
+	.search-title {
+		margin-top: 28px;
+		margin-bottom: 15px;
+		font-size: 28px;
+		line-height: 1.25;
+	}
+	.search-row {
+		justify-content: center;
+	}
+	.search-checkboxs {
+		text-align: left;
+		margin-top: 25px;
+	}
+	.search-pay {
+		margin-top: 0;
+		margin-right: 10px;
+	}
+	.search-bit {
+		margin-top: 0;
+	}
+	.search-text-bit {
+		margin-right: 0;
+		margin-top: 17px;
+	}
+	.search-btn {
+		padding: 12px 14px;
+		font-size: 16px;
+	}
+	.list-title {
+		font-size: 28px;
+	}
+	.list-item {
+		font-size: 16px;
+		line-height: 1.25;
+		margin-bottom: 5px;
+		padding-left: 10px;
+	}
+	.list-item:nth-child(1) {
+		padding-left: 10px;
+		width: 100%;
+	}
+	.list-item:nth-child(2) {
+		width: 100%;
+	}
+	.list-item:nth-child(3) { 
+		width: 100%;
+	}
+	.list-item:nth-child(4) { 
+		width: 100%;
+	}
+	.list-item:nth-child(5) { 
+		width: 100%;
+	}
+	.list-item:nth-child(6) { 
+		width: 100;
+		padding-right: 0;
+		margin-bottom: 0;
+		padding-left: 0;
+	}
+	.list-row {
+		flex-direction: column;
+		align-items: center;
+	}
+	.list-btn {
+		padding: 12px 14px;
+		font-size: 16px;
+	}
+	.main-add .search-block:not(:first-child) {
+		width: 100%;
+		margin-left: 0;
+	}
+	.main-add .search-checkboxs {
+		width: 100%;
+	}
+	.main-add .search-block-bit {
+		margin-top: 25px;
+	}
+	.registration-label {
+		font-size: 16px;
+		line-height: 1.25;
+		width: 100px;
+		text-align: left;
+	}
+	.registration-input {
+		width: 100%;
+	}
+	.registration-btn {
+		margin-top: 40px;
+		padding: 12px 14px;
+	}
+	.owner-title {
+		max-width: 100%;
+		margin-bottom: 20px;
+		margin-top: 20px;
+		font-size: 18px;
+		line-height: 1.25;
+	}
+	.registration-item {
+		flex-wrap: wrap;
+	}
+	.input-file + label {
+		flex: 1 0 auto;
+		text-align: center;
+		padding: 12px 14px;
+	}
+	.carrier-title {
+		max-width: 100%;
+		margin-bottom: 20px;
+		margin-top: 20px;
+		font-size: 18px;
+		line-height: 1.25;
+	}
+	.transport-title {
+		max-width: 100%;
+		margin-bottom: 20px;
+		margin-top: 20px;
+		font-size: 18px;
+		line-height: 1.25;
+	}
+	.transport-form .registration-label {
+		width: 100%;
+		text-align: left;
+	}
+	.registration-input-short {
+		width: 86px;
+	}
 }
 
 @media (max-width: 575px) { 
@@ -879,13 +1038,31 @@ margin: 0; /* убираем стандартные отступы для заг
 	.header-title {
 		font-size: 24px;
 		line-height: 1.2;
+		margin-left: 12px;
+	}
+	.header-logo img{
+		width: 50px;
 	}
 	.header-values {
-		flex-direction: column-reverse;
-		align-items: flex-start;
+		flex-direction: row-reverse;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		row-gap: 10px;
+		column-gap: 10px;
 	}
 	.header-value-bold::after {
 		bottom: -3px;
+	}
+	.header-avatar {
+		margin-left: 0;
+	}
+	.header-name {
+		display: none;
+	}
+	.header-subtitle {
+		font-size: 18px;
+		line-height: 1.25;
 	}
 	.main-title {
 		font-size: 24px;
@@ -902,7 +1079,75 @@ margin: 0; /* убираем стандартные отступы для заг
 		font-size: 16px;
 		padding: 10px;
 	}
+	.main-search {
+		max-width: 100%;
+	}
 	.footer-img {
 		margin-top: 30px;
+	}
+	.login-title {
+		font-size: 24px;
+		line-height: 1.2;
+		margin-top: 40px;
+	}
+	.login-form {
+		margin-top: 20px;
+		margin-right: 0;
+	}
+	.login-item {
+		margin-bottom: 15px;
+	}
+	.login-label {
+		font-size: 14px;
+	}
+	.login-input {
+		width: 100%;
+	}
+	.login-btn {
+		font-size: 16px;
+		padding: 10px;
+		margin-left: 0;
+	}
+	.search-text {
+		margin-top: 20px;
+		font-size: 14px;
+		line-height: 1.25;
+	}
+	.search-label {
+		font-size: 14px; 
+		line-height: 1.25;
+	}
+	.search-checkboxs {
+		width: 100%;
+	}
+	.search-block-bit {
+		flex: 1 0 100%;
+	}
+	.search-text-bit:last-child {
+		margin-right: 0;
+		width: auto;
+	}
+	.list-title {
+		font-size: 24px;
+	}
+	.main-registration {
+		margin-top: 30px;
+	}
+	.registration-item {
+		flex-wrap: wrap;
+		margin-top: 15px;
+	}
+	.registration-label {
+		width: 100%;
+		margin-right: 0;
+		text-align: left;
+	}
+	.registration-radio + label {
+		margin-bottom: 0;
+		margin-top: 18px;
+	}
+	.registration-btn {
+		font-size: 16px;
+		margin-top: 40px;
 	}
 }
