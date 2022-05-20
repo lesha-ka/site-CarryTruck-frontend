@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<script defer src="assets/scripts/jquery-3.6.0.slim.min.js"></script> 
+		<script defer src="assets/scripts/script.js"></script> 
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="stylesheet" href="assets/css/style.css"> 
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet"> <!-- Подключение необходимого шрифта через сервис Google Fonts -->
+		<title>CarryTruck-Регистрация</title> 
+	</head>
+	<body class="page"> 
+		<div class="container">	
+			<header class="header">
+				<div class="header-logo">
+					<img src="assets/images/logo.svg" alt="Логотип">
+					<h1 class="header-title">CarryTruck</h1>
+				</div>
+				<div class="header-subtitle">Регистрация нового участника</div>
+			</header> 
+			<main class="main main-registration">
+                <form action="" >
+                    <div class="registration-form js-form">
+                        <div class="registration-item">
+                            <p class="registration-label">Профиль деятельности</p>
+                            <div>
+                                <input type="radio" id="radio-1" name="profile" class="registration-radio js-input js-inputRadio" value="owner"><!-- тег input с типом radio, нужен в случае выбора одного из двух вариантов -->
+                                <label for="radio-1">Грузовладелец</label><!-- input с типом radio плохо редактируется визуально, поэтому к нему привязывается label у которого таких проблем нет -->
+                                <input type="radio" id="radio-2" name="profile" class="registration-radio js-input js-inputRadio" value="carrier"><!-- тег input с типом radio, нужен в случае выбора одного из двух вариантов -->
+                                <label for="radio-2">Грузоперевозчик</label><!-- input с типом radio плохо редактируется визуально, поэтому к нему привязывается label у которого таких проблем нет -->
+                            </div>
+                        </div>
+                        <div class="registration-item">
+                            <p class="registration-label">Моб.Телефон</p>
+                            <div class="registration-tel">
+                                <input type="tel" class="registration-input registration-input-tel js-input" placeholder="+7 (____)-___-__-__">
+                            </div>
+                        </div>
+                        <div class="registration-item">
+                            <p class="registration-label">Email</p>
+                            <input type="email" class="registration-input js-input">
+                        </div>
+                        <div class="registration-item">
+                            <p class="registration-label">Логин</p>
+                            <input type="text" class="registration-input js-input">
+                        </div>
+                        <div class="registration-item">
+                            <p class="registration-label">Пароль</p>
+                            <input type="password" class="registration-input js-input" autocomplete="off">
+                        </div>
+                        <a href="owner.html" class="registration-btn js-submitBtn js-regBtn">Продолжить</a>
+                    </div>
+                </form>
+			</main>
+			<footer class="footer"> 
+			</footer>
+		</div>
+	</body> 
+</html>

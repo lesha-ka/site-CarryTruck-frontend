@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<script defer src="assets/scripts/jquery-3.6.0.slim.min.js"></script> 
+		<script defer src="assets/scripts/script.js"></script> 
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="stylesheet" href="assets/css/style.css"> 
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet"> <!-- Подключение необходимого шрифта через сервис Google Fonts -->
+		<title>CarryTruck-Поиск груза</title> 
+	</head>
+	<body class="page"> 
+		<div class="container">	
+			<header class="header">
+				<div class="header-logo">
+					<img src="assets/images/logo.svg" alt="Логотип">
+					<h1 class="header-title">CarryTruck</h1> 
+				</div>
+				<div class="header-values">
+					<p class="header-value header-value-bold"> Кол-во грузов 8792</p>
+					<p class="header-value"> Поддержка</p>
+					<p class="header-value"> Участников 15349</p>
+				</div>
+				<div class="header-user">
+					<div class="heder-avatar">
+                        <img src="assets/images/avatar.svg" alt="">
+                    </div>
+					<p class="header-name"> Иванов И.И.</p>
+				</div>
+			</header> 
+			<main class="main main-search">
+                <h2 class="search-title">Поиск груза...</h2>
+                <form action="">
+                    <div class="search-row"> <!-- блок обвертка для того что б выровнять вложенные в него по горизонтали -->
+                        <div class="search-block">
+                            <div>
+                                <p class="search-label">Откуда</p>
+                                <input type="text" class="search-input">
+                            </div>
+                        </div>
+                        <div class="search-block">
+                            <div>
+                                <p class="search-label">Куда</p>
+                                <input type="text" class="search-input">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-row">
+                        <div class="search-block">
+                            <span class="search-text">Вес т.</span>
+                            <span class="search-text search-text-small">от</span>
+                            <input type="text" class="search-input search-input-short">
+                            <span class="search-text search-text-small">до</span>
+                            <input type="text" class="search-input search-input-short">
+                        </div>
+                        <div class="search-block">
+                            <span class="search-text">Объем м3</span>
+                            <span class="search-text search-text-small">от</span>
+                            <input type="text" class="search-input search-input-short">
+                            <span class="search-text search-text-small">до</span>
+                            <input type="text" class="search-input search-input-short">
+                        </div>
+                    </div>
+                    <div class="search-row">
+                        <div class="search-block search-block-date">
+                            <p class="search-text">Дата погрузки</p>
+                            <input type="text" class="search-input">
+                        </div>
+                        <div class="search-checkboxs">
+                            <p class="search-label">Тип кузова</p>
+                            <div>
+                                <input type="checkbox" class="search-checkbox" id="type-1">  <!-- атрибут id нужен для того что б связать с элементом label --> 
+                                <label for="type-1"> Тентованный</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" class="search-checkbox" id="type-2">
+                                <label for="type-2"> Контейнер</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" class="search-checkbox" id="type-3">
+                                <label for="type-3"> Фургон</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" class="search-checkbox" id="type-4">
+                                <label for="type-4"> Изометрический</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" class="search-checkbox" id="type-5">
+                                <label for="type-5"> Другие</label>
+                            </div>
+                        </div>
+                        <div class="search-checkboxs">
+                            <p class="search-label">Тип загрузки</p>
+                            <div>
+                                <input type="checkbox" class="search-checkbox" id="type-6">
+                                <label for="type-6">Верхняя</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" class="search-checkbox" id="type-7">
+                                <label for="type-7">Боковая</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" class="search-checkbox" id="type-8">
+                                <label for="type-8">Задняя</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" class="search-checkbox" id="type-9">
+                                <label for="type-9">Другие</label>
+                            </div>
+                        </div>
+                        <div class="search-checkboxs">
+                            <p class="search-label">Тип выгрузки</p>
+                            <div>
+                                <input type="checkbox" class="search-checkbox" id="type-10">
+                                <label for="type-10">Верхняя</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" class="search-checkbox" id="type-11">
+                                <label for="type-11">Боковая</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" class="search-checkbox" id="type-12">
+                                <label for="type-12">Задняя</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" class="search-checkbox" id="type-13">
+                                <label for="type-13">Другие</label>
+                            </div>
+                            <div>
+                        </div>
+                    </div>
+                    <div class="search-row">
+                        <div class="search-block">
+                            <p class="search-pay">Оплата</p>
+                        </div>
+                        <div class="search-block search-block-bit">
+                            <p class="search-bit">Ставка:</p>
+                            <div>
+                                <span class="search-text search-text-bit">С НДС, безнал</span>
+                                <input type="text" class="search-input search-input-bit">
+                                <span class="search-text search-text-bit">Руб/км</span>
+                            </div>
+                            <div>
+                                <span class="search-text search-text-bit">С НДС, безнал</span>
+                                <input type="text" class="search-input search-input-bit">
+                                <span class="search-text search-text-bit">Руб/км</span>
+                            </div>
+                            <div>
+                                <span class="search-text search-text-bit">Наличными</span>
+                                <input type="text" class="search-input search-input-bit">
+                                <span class="search-text search-text-bit">Руб/км</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="list.html" class="search-btn">Найти груз</a>
+                </form>
+            </main>
+			<footer class="footer"></footer>
+		</div>
+	</body> 
+</html>
