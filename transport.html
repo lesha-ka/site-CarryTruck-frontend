@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<script defer src="assets/scripts/jquery-3.6.0.slim.min.js"></script> 
+		<script defer src="assets/scripts/script.js"></script> 
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="stylesheet" href="assets/css/style.css"> 
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet"> <!-- Подключение необходимого шрифта через сервис Google Fonts -->
+		<title>CarryTruck-Регистрация</title> 
+	</head>
+	<body class="page"> 
+		<div class="container">	
+			<header class="header">
+				<a href="index.html" class="header-logo">
+					<img src="assets/images/logo.svg" alt="Логотип">
+					<h1 class="header-title">CarryTruck</h1>
+				</a>
+				<div class="header-subtitle">Регистрация грузоперевозчика</div>
+			</header> 
+			<main class="main">
+				<form action="" >
+					<div class="registration-form transport-form js-form">
+						<h2 class="transport-title">Заполните параметры своего грузового транспортного средства</h2>
+						<div class="registration-item">
+							<p class="registration-label">Тип кузова</p>
+							<select class="transport-select js-input" name="type" id="">
+								<option class="transport-option" value="" ></option>
+								<option class="transport-option" value="1">Тентованный</option>
+								<option class="transport-option" value="2">Контейнер</option>
+								<option class="transport-option" value="3">Фургон</option>
+								<option class="transport-option" value="4">Изометрический</option>
+								<option class="transport-option" value="5">Другие</option>
+							</select>
+						</div>
+						<div class="registration-item">
+							<p class="registration-label">Тип погрузки</p>
+							<select class="transport-select js-input" name="type" id="">
+								<option class="transport-option" value="" selected></option>
+								<option class="transport-option" value="1">Верхняя</option>
+								<option class="transport-option" value="2">Боковая</option>
+								<option class="transport-option" value="3">Задняя</option>
+								<option class="transport-option" value="4">Другие</option>
+							</select>
+						</div>
+						<div class="registration-item">
+							<p class="registration-label">Грузоподъёмность т.</p>
+							<input type="text" class="registration-input js-input">
+						</div>
+						<div class="registration-item">
+							<p class="registration-label">Объём м^3</p>
+							<input type="text" class="registration-input js-input">
+						</div>
+						<div class="registration-item">
+							<p class="registration-label">Внутр. габариты кузова Д/Ш/В</p>
+							<input type="text" class="registration-input registration-input-short js-input">
+							<input type="text" class="registration-input registration-input-short js-input">
+							<input type="text" class="registration-input registration-input-short js-input">
+						</div>
+						<a href="menu.html" class="registration-btn js-submitBtn js-regBtn">Продолжить</a>
+					</div>
+				</form>
+			</main>
+			<footer class="footer"> 
+			</footer>
+		</div>
+	</body> 
+</html>

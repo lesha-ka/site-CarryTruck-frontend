@@ -12,25 +12,47 @@
 	<body class="page"> 
 		<div class="container">	
 			<header class="header">
-				<div class="header-logo">
+				<a href="index.html" class="header-logo">
 					<img src="assets/images/logo.svg" alt="Логотип">
 					<h1 class="header-title">CarryTruck</h1> 
-				</div>
+				</a>
 				<div class="header-values">
 					<p class="header-value header-value-bold"> Кол-во грузов 8792</p>
 					<p class="header-value"> Поддержка</p>
 					<p class="header-value"> Участников 15349</p>
 				</div>
 				<div class="header-user">
-					<div class="heder-avatar">
+					<div class="header-avatar">
                         <img src="assets/images/avatar.svg" alt="">
                     </div>
 					<p class="header-name"> Иванов И.И.</p>
 				</div>
 			</header> 
 			<main class="main main-list">
-               <h2 class="list-title">По вашему запросу найдено <span>352</span> груза</h2>
-               <a href="add.html" class="list-btn"> Добавить груз</a>
+               <h2 class="list-title">По вашему запросу найдено <span>2</span> груза</h2> <!-- Цифра 2 обвернута в тег span, что при формировании странички на основе БД, туда можно было поместить необходимую цифру -->
+			   <div class="list-table">
+				   <div class="list-row">
+					   <div class="list-item">Ростов-на-Дону -- Краснодар</div>
+					   <div class="list-item">30т зерно</div>
+					   <div class="list-item">Название фирмы</div>
+					   <div class="list-item">Моб. телефон</div>
+					   <div class="list-item list-item-small">Полная информация</div>
+					   <div class="list-item">
+						   <img src="assets/images/info.svg" alt="">
+					   </div>
+				   </div>
+				   <div class="list-row">
+					   <div class="list-item">Ростов-на-Дону -- Москва</div>
+					   <div class="list-item">15т оборудование и&nbsp;запчасти</div>
+					   <div class="list-item">Название фирмы</div>
+					   <div class="list-item">Моб. телефон</div>
+					   <div class="list-item list-item-small">Полная информация</div>
+					   <div class="list-item">
+						   <img src="assets/images/info.svg" alt="">
+					   </div>
+				   </div>
+			   </div>
+			   <a href="add.html" class="list-btn"> Добавить груз</a>
             </main>
 			<footer class="footer"></footer>
 		</div>

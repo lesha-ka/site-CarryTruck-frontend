@@ -12,10 +12,10 @@
 	<body class="page"> 
 		<div class="container">	
 			<header class="header">
-				<div class="header-logo">
+				<a href="index.html" class="header-logo">
 					<img src="assets/images/logo.svg" alt="Логотип">
 					<h1 class="header-title">CarryTruck</h1>
-				</div>
+                </a>
 				<div class="header-subtitle">Регистрация нового участника</div>
 			</header> 
 			<main class="main main-registration">
@@ -24,9 +24,9 @@
                         <div class="registration-item">
                             <p class="registration-label">Профиль деятельности</p>
                             <div>
-                                <input type="radio" id="radio-1" name="profile" class="registration-radio js-input js-inputRadio" value="owner"><!-- тег input с типом radio, нужен в случае выбора одного из двух вариантов -->
+                                <input type="radio" id="radio-1" name="profile" class="registration-radio js-input js-inputRadio" data-page="owner" value="owner"><!-- тег input с типом radio, нужен в случае выбора одного из двух вариантов -->
                                 <label for="radio-1">Грузовладелец</label><!-- input с типом radio плохо редактируется визуально, поэтому к нему привязывается label у которого таких проблем нет -->
-                                <input type="radio" id="radio-2" name="profile" class="registration-radio js-input js-inputRadio" value="carrier"><!-- тег input с типом radio, нужен в случае выбора одного из двух вариантов -->
+                                <input type="radio" id="radio-2" name="profile" class="registration-radio js-input js-inputRadio" data-page="carrier" value="carrier"><!-- тег input с типом radio, нужен в случае выбора одного из двух вариантов -->
                                 <label for="radio-2">Грузоперевозчик</label><!-- input с типом radio плохо редактируется визуально, поэтому к нему привязывается label у которого таких проблем нет -->
                             </div>
                         </div>

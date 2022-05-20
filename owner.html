@@ -12,15 +12,49 @@
 	<body class="page"> 
 		<div class="container">	
 			<header class="header">
-				<div class="header-logo">
+				<a href="index.html" class="header-logo">
 					<img src="assets/images/logo.svg" alt="Логотип">
 					<h1 class="header-title">CarryTruck</h1>
-				</div>
+				</a>
 				<div class="header-subtitle">Регистрация грузоотправителя</div>
 			</header> 
-			<main class="main main-registration">
-                <form action="" >
-                </form>
+			<main class="main">
+				<form action="" >
+					<h2 class="owner-title">Добавьте контакты, чтобы с вами могли связаться по вопросам сотрудничества.</h2>
+					<div class="owner-form js-form">
+						<p class="owner-label">Название Фирмы</p>
+						<div class="registration-item">
+							<select class="registration-label owner-select" name="type" id="">
+								<option class="owner-option" value="" selected>ИП</option>
+								<option class="owner-option" value="">ООО</option>
+								<option class="owner-option" value="">ОАО</option>
+								<option class="owner-option" value="">ПК</option>
+								<option class="owner-option" value="">ОО</option>
+							</select>
+							<input type="text" class="registration-input js-input">
+						</div>
+						<div class="registration-item">
+							<p class="registration-label">Город</p>
+							<input type="text" class="registration-input js-input">
+						</div>
+						<div class="registration-item">
+							<p class="registration-label">ФИО</p>
+							<input type="text" class="registration-input js-input">
+						</div>
+						<div class="registration-item">
+							<p class="registration-label">Моб.Телефон</p>
+							<div class="registration-tel">
+								<input type="tel" class="registration-input registration-input-tel js-input" placeholder="+7 (____)-___-__-__">
+							</div>
+						</div>
+						<div class="registration-item">
+							<p class="registration-label">Электронные копии документов</p>
+							<input type="file" id="input-file" class="input-file">
+							<label for="input-file">Добавить документы</label>
+							<a href="menu.html" class="registration-btn owner-btn js-submitBtn js-regBtn">Завершить</a>
+						</div>
+					</div>
+				</form>
 			</main>
 			<footer class="footer"> 
 			</footer>

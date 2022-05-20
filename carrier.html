@@ -12,15 +12,60 @@
 	<body class="page"> 
 		<div class="container">	
 			<header class="header">
-				<div class="header-logo">
+				<a href="index.html" class="header-logo">
 					<img src="assets/images/logo.svg" alt="Логотип">
 					<h1 class="header-title">CarryTruck</h1>
-				</div>
+				</a>
 				<div class="header-subtitle">Регистрация нового участника как грузоперевозчика</div>
 			</header> 
-			<main class="main main-registration">
-                <form action="">
-                </form>
+			<main class="main">
+				<div class="registration-form carrier-form js-form">
+					<h2 class="carrier-title">Добавьте контакты, чтобы с вами могли связаться по вопросам сотрудничества.</h2>
+					<div class="registration-item">
+						<p class="registration-label">Фамилия</p>
+						<input type="text" class="registration-input js-input">
+					</div>
+					<div class="registration-item">
+						<p class="registration-label">Имя</p>
+						<input type="text" class="registration-input js-input">
+					</div>
+					<div class="registration-item">
+						<p class="registration-label">Отчество</p>
+						<input type="text" class="registration-input js-input">
+					</div>
+					<div class="registration-item">
+						<p class="registration-label">Пол</p>
+						<input type="radio" id="radio-1" name="profile" class="registration-radio js-inputRadio" value="man"><!-- тег input с типом radio, нужен в случае выбора одного из двух вариантов -->
+						<label for="radio-1">Муж.</label><!-- input с типом radio плохо редактируется визуально, поэтому к нему привязывается label у которого таких проблем нет -->
+						<input type="radio" id="radio-2" name="profile" class="registration-radio js-inputRadio" value="woman"><!-- тег input с типом radio, нужен в случае выбора одного из двух вариантов -->
+						<label for="radio-2">Жен.</label><!-- input с типом radio плохо редактируется визуально, поэтому к нему привязывается label у которого таких проблем нет -->
+					</div>
+					<div class="registration-item">
+						<p class="registration-label">Дата рождения</p>
+						<input type="text" class="registration-input js-input">
+					</div>
+					<div class="registration-item">
+						<p class="registration-label">Документ, удостоверяющий личность</p>
+						<input type="text" class="registration-input js-input">
+					</div>
+					<div class="registration-item">
+						<p class="registration-label">Серия и номер</p>
+						<input type="text" class="registration-input js-input">
+					</div>
+					<div class="registration-item">
+						<p class="registration-label">Дата выдачи</p>
+						<input type="text" class="registration-input js-input">
+					</div>
+					<div class="registration-item">
+						<p class="registration-label">Кем выдан</p>
+						<input type="text" class="registration-input js-input">
+					</div>
+					<div class="registration-item">
+						<p class="registration-label">Код подразделения</p>
+						<input type="text" class="registration-input js-input">
+					</div>
+					<a href="transport.html" class="registration-btn js-submitBtn js-regBtn">Продолжить</a>
+				</div>
 			</main>
 			<footer class="footer"> 
 			</footer>
