@@ -799,20 +799,110 @@ margin: 0; /* убираем стандартные отступы для заг
 	width: 88px;
 }
 
-
-
-
-
-
-
-
-
-
-
 .error { /* класс который обавляет js при ошибке ввода в поля*/
 	border-color: #FE2249; /* сделаем цвет рамки красным */
 }
 
 .error + label::before { /* селектор last-child указывает на последний элемент в блоке*/
 	border: 2px solid #FE2249;
+}
+
+
+@media (max-width: 1230px) { /* Запросы типа @media нужны для того что б узнать информацию у устройстве пользователя, в данном случа мы узнаем ширину экрана и если она меньше заданного значения применяем стили описанные внутри*/
+	.container {
+		width: 890px; /* устанавливаем ширину блока содержащего контент*/
+	}
+	.main-link {
+		margin-bottom: 10px;
+	}
+}
+
+@media (max-width: 900px) { 
+	.container {
+		width: 550px; /* устанавливаем ширину блока содержащего контент*/
+	}
+	.header {
+		flex-wrap: wrap;
+	}
+	.header-avatar {
+		max-width: 45px;
+		margin-left: 10px;
+	}
+	.header-avatar img{
+		max-width: 100%;
+	}
+	.header-values {
+		margin-top: 10px;
+		order: 3;
+	}
+	.main-content {
+		margin-top: 40px;
+		display: block;
+	}
+	.main-info {
+		max-width: 100%;
+	}
+	.main-links {
+		margin-left: 0;
+		margin-top: 15px;
+	}
+	.main-link {
+		max-width: calc(50% - 15px);
+		padding: 12px 14px;
+		margin-right: 0;
+	}
+	.main-link:last-child {
+		margin-left: 20px;
+	}
+	.login-btn {
+		padding: 12px 14px;
+	}
+	.menu {
+		margin-top: 15vh;
+		flex-direction: column;
+		align-items: center;
+	}
+	.menu-link {
+		margin-right: 0;
+		margin-bottom: 25px;
+		padding: 12px 14px;
+	}
+	.footer-img {
+		margin-top: 120px;
+	}
+}
+
+@media (max-width: 575px) { 
+	.container {
+		width: 300px; /* устанавливаем ширину блока содержащего контент*/
+	}
+	.header-title {
+		font-size: 24px;
+		line-height: 1.2;
+	}
+	.header-values {
+		flex-direction: column-reverse;
+		align-items: flex-start;
+	}
+	.header-value-bold::after {
+		bottom: -3px;
+	}
+	.main-title {
+		font-size: 24px;
+		line-height: 1.2;
+		text-align: center;
+	}
+	.main-text {
+		margin-top: 15px;
+		font-size: 18px;
+		line-height: 1.2;
+		text-align: left;
+	}
+	.main-link {
+		font-size: 16px;
+		padding: 10px;
+	}
+	.footer-img {
+		margin-top: 30px;
+	}
 }
