@@ -63,6 +63,13 @@ margin: 0; /* убираем стандартные отступы для заг
 	font-weight: 500;
 	margin-right: 36px; /* устанавливает отступ элемента справа*/
 }
+.header-value a{
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 19px; 
+	font-weight: 500;
+	color: #000;
+}
 .header-value:last-child { /* выбираем элемент с классом header-value, который является последним*/
 	margin-right: 0; /* убираем отступ справа*/
 }
